@@ -1,0 +1,8 @@
+package com.example.brand;
+
+public class Hitachi implements HardDisk{
+	public void storage() {
+		
+	}
+
+}

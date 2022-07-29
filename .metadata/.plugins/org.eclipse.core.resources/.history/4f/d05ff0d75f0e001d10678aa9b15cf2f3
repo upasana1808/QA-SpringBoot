@@ -1,0 +1,129 @@
+package com.example.model;
+
+import java.util.Objects;
+
+@NoArgumentConstructor
+public class Computer {
+	public int srNo;
+	public String brand;
+	public int RAM;
+	public int storage;
+	public String MB;
+	public int price;
+	public int warranty;
+	public boolean deliveryCharges;
+	public int screenSize;
+	public String color;
+	public String series;
+	public Computer(int srNo, String brand, int rAM, int storage, String mB, int price, int warranty,
+			boolean deliveryCharges, int screenSize, String color, String series) {
+		super();
+		this.srNo = srNo;
+		this.brand = brand;
+		RAM = rAM;
+		this.storage = storage;
+		MB = mB;
+		this.price = price;
+		this.warranty = warranty;
+		this.deliveryCharges = deliveryCharges;
+		this.screenSize = screenSize;
+		this.color = color;
+		this.series = series;
+	}
+	public Computer() {
+		super();
+	}
+	public int getSrNo() {
+		return srNo;
+	}
+	public void setSrNo(int srNo) {
+		this.srNo = srNo;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public int getRAM() {
+		return RAM;
+	}
+	public void setRAM(int rAM) {
+		RAM = rAM;
+	}
+	public int getStorage() {
+		return storage;
+	}
+	public void setStorage(int storage) {
+		this.storage = storage;
+	}
+	public String getMB() {
+		return MB;
+	}
+	public void setMB(String mB) {
+		MB = mB;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getWarranty() {
+		return warranty;
+	}
+	public void setWarranty(int warranty) {
+		this.warranty = warranty;
+	}
+	public boolean isDeliveryCharges() {
+		return deliveryCharges;
+	}
+	public void setDeliveryCharges(boolean deliveryCharges) {
+		this.deliveryCharges = deliveryCharges;
+	}
+	public int getScreenSize() {
+		return screenSize;
+	}
+	public void setScreenSize(int screenSize) {
+		this.screenSize = screenSize;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getSeries() {
+		return series;
+	}
+	public void setSeries(String series) {
+		this.series = series;
+	}
+	@Override
+	public String toString() {
+		return "Computer [srNo=" + srNo + ", brand=" + brand + ", RAM=" + RAM + ", storage=" + storage + ", MB=" + MB
+				+ ", price=" + price + ", warranty=" + warranty + ", deliveryCharges=" + deliveryCharges
+				+ ", screenSize=" + screenSize + ", color=" + color + ", series=" + series + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(MB, RAM, brand, color, deliveryCharges, price, screenSize, series, srNo, storage, warranty);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Computer other = (Computer) obj;
+		return Objects.equals(MB, other.MB) && RAM == other.RAM && Objects.equals(brand, other.brand)
+				&& Objects.equals(color, other.color) && deliveryCharges == other.deliveryCharges
+				&& price == other.price && screenSize == other.screenSize && Objects.equals(series, other.series)
+				&& srNo == other.srNo && storage == other.storage && warranty == other.warranty;
+	}
+	
+	
+
+}

@@ -1,0 +1,30 @@
+package com.example.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.model.Book;
+
+@Service
+public class BookService {
+	public List<Book> list = new ArrayList();
+	
+	public Book addBook(Book b1) {
+		this.list.add(b1);
+		return this.list.get(list.size()-1);
+	}
+	public List<Book> readBook() {
+		return this.list;
+	}
+	public Book updateBook(int id,Book b2) {
+		this.list.remove(id);
+		this.list.add(id,b2);
+		return this.list.get(id);
+	}
+	public void deleteBook(int id) {
+		this.list.remove(id);
+	}
+	
+}

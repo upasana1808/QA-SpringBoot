@@ -1,0 +1,32 @@
+package com.example.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.model.Book;
+import com.example.repo.BookRepo;
+
+@Service
+public class BookService {
+	private BookRepo repo;	
+	//public List<Book> list = new ArrayList();	
+	public BookService(BookRepo repo) {
+		super();
+		this.repo = repo;
+	}
+	public Book addBook(Book b1) {
+		
+	}
+	public List<Book> readBook() {
+		
+	}
+	public Book updateBook(int id,Book b2) {
+		
+	}
+	public void deleteBook(int id) {
+		
+	}
+	
+}

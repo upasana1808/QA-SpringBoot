@@ -1,0 +1,10 @@
+package com.example.model;
+
+public class Book {
+	int id;
+	String title;
+	String price;
+	String author;
+	
+
+}

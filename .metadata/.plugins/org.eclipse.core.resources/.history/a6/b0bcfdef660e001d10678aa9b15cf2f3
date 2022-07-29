@@ -1,0 +1,17 @@
+package com.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.model.Computer;
+
+@SpringBootApplication
+public class LomBokExampleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LomBokExampleApplication.class, args);
+		Computer comp=new Computer();
+		comp.brand="Samsung";
+	}
+
+}

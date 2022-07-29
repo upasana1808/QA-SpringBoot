@@ -1,0 +1,12 @@
+package com.example.cars;
+
+import com.example.interfaces.Car;
+
+public class Merc implements Car{
+	Engine eng;
+	
+	public String spec() {
+		return "this is SUV with engine type as "+eng.type;
+	}
+
+}

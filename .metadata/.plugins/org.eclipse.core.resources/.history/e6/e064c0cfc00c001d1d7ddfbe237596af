@@ -1,0 +1,12 @@
+package com.example.laptops;
+
+import com.example.interfaces.HardDisk;
+import com.example.interfaces.Laptop;
+
+public class Dell implements Laptop{
+	HardDisk hdd;
+	public  void configuration()
+	{
+		System.out.println("A Dell laoptop which has "+hdd.storage());
+	}
+}

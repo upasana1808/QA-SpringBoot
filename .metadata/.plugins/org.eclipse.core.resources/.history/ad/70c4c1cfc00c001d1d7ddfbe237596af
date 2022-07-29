@@ -1,0 +1,10 @@
+package com.example.brand;
+
+import com.example.interfaces.HardDisk;
+
+public class Hitachi implements HardDisk{
+	public String storage() {
+		return "This HDD has read write speed of 100MBPS";
+	}
+
+}

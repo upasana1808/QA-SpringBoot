@@ -1,0 +1,10 @@
+package com.example.brand;
+
+import com.example.interfaces.HardDisk;
+
+public class Toshiba implements HardDisk{
+	public void storage() {
+		System.out.println("This HDD has read write speed of 150 MBPS");
+	}
+
+}

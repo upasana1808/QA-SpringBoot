@@ -1,0 +1,15 @@
+package com.example.cars;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.interfaces.Car;
+
+public class BMW implements Car{
+	@Autowired
+	Engine eng;//new Engine();
+	
+	public String spec() {
+		return "this is SUV with engine type as "+eng.type;
+	}
+
+}

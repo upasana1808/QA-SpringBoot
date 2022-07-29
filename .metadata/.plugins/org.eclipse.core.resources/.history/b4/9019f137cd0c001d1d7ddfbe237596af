@@ -1,0 +1,13 @@
+package com.example.model;
+
+import javax.persistence.Entity;
+
+//name of table will be Employee
+@Entity
+public class Employee {
+	private int id;
+	private String name;
+	private int age;
+	private String address;
+	private String email;
+}

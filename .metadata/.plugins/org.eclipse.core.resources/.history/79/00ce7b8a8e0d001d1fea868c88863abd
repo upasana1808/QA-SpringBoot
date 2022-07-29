@@ -1,0 +1,22 @@
+package com.example.model;
+
+public class Book {
+	public int id;
+	public String title;
+	public int price;
+	public String author;
+	public Book(int id, String title, int price, String author) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.price = price;
+		this.author = author;
+	}
+	public Book() {
+		super();
+	}
+	
+	
+	
+
+}
